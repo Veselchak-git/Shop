@@ -1,0 +1,50 @@
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.pages button {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text-primary);
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.pages button:hover:not(:disabled) {
+  background: var(--hover-bg);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.pages button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.active {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+.dots {
+  border: none !important;
+  background: transparent !important;
+  opacity: 0.5 !important;
+  cursor: default !important;
+}
+
+.arrow {
+  font-size: 16px;
+  font-weight: 500;
+}
